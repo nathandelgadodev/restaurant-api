@@ -1,10 +1,10 @@
-# :fork_knife_plate: Restaurant API
+# :utensils: Restaurant API
 
 A RESTful API built for managing restaurant operations, including products, menus, and orders. Built with Node.js, TypeScript, Express, Knex.js, and Zod.
 
 ---
 
-## :tools: Technologies Used
+## :tool: Technologies Used
 
 - **[Node.js](https://nodejs.org/)** — JavaScript runtime environment
 - **[TypeScript](https://www.typescriptlang.org/)** — Typed superset of JavaScript
