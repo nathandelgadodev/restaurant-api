@@ -25,9 +25,19 @@ export class TablesSessionsController {
         table_id,
         opened_at: knex.fn.now(),
       });
-      return response.json(session);
 
       return response.status(201).json();
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  async index(request: Request, response: Response, next: NextFunction) {
+    try {
+      const sessions = await knex<TablesSessionsRepository>("tables_sessions")
+        .orderBy("closed_at");
+
+      return response.json(sessions);
     } catch (error) {
       next(error);
     }
