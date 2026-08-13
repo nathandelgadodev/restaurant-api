@@ -1,6 +1,6 @@
 # 🍽️ Restaurant API
 
-A RESTful API built for managing restaurant operations, including products, menus, and orders. Built with Node.js, TypeScript, Express, Knex.js, and Zod.
+A RESTful API built for managing restaurant operations, including products, tables, and orders. Built with Node.js, TypeScript, Express, Knex.js, SQLite, and Zod.
 
 ---
 
