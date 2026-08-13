@@ -56,12 +56,19 @@ The server will start at `http://localhost:3333` (or the port defined in `server
 
 ## 📌 API Endpoints
 
-| Method   | Endpoint        | Description                              |
-| :------- | :-------------- | :--------------------------------------- |
-| `GET`    | `/products`     | List all products                        |
-| `POST`   | `/products`     | Create a new product (validated via Zod) |
-| `PUT`    | `/products/:id` | Update an existing product               |
-| `DELETE` | `/products/:id` | Delete a product                         |
+| Method   | Endpoint                                        | Description                                          |
+| :------- | :---------------------------------------------- | :--------------------------------------------------- |
+| `GET`    | `/products`                                     | List all products                                    |
+| `POST`   | `/products`                                     | Create a new product (validated via Zod)             |
+| `PUT`    | `/products/:id`                                 | Update an existing product                           |
+| `DELETE` | `/products/:id`                                 | Delete a product                                     |
+| `GET`    | `/tables`                                       | List all tables                                      |
+| `GET`    | `/tables-sessions`                              | List all table sessions                              |
+| `POST`   | `/tables-sessions`                              | Open a new table session                             |
+| `PATCH`  | `/tables-sessions/:id`                          | Close a table session                                |
+| `POST`   | `/orders`                                       | Create a new order                                   |
+| `GET`    | `/orders/table-session/:table_session_id`       | List orders by table session                         |
+| `GET`    | `/orders/table-session/:table_session_id/total` | Get order total and item quantity summary by session |
 
 ---
 
